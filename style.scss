@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body
+{
+    background-color: #1b2330;
+}
+
+
+.navbar-container
+{
+    width: 100%;
+    height: 130px;
+    border: 1px solid white;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container
+    {
+        display: flex;
+        align-items: center;
+        h1
+        {
+            color: white;
+            font-size: 50px;
+            margin-left: 15px;
+        }
+    }
+    .nav-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        li
+        {
+            li
+            {
+                list-style: none;
+                font-size: 17px;
+                color: white;
+
+            }
+            @media(max-width:750px){
+                display: none;
+            }
+        }
+    }
+    .menu{
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    @media(max-width:750px){
+        display: flex;
+    }
+    .menu-icon{
+        color: white;
+        font-size: 40px;
+    }
+}
+
+
+.home-image
+{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    img{
+        @media(max-width:750px){
+            width: 96%;
+        }
+    }
+    h1
+    {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+line-height: 60px;
+text-align: center;
+color: #FFFFFF;
+max-width: 750px;
+@media(max-width:750px){
+    font-size: 30px;
+    line-height: 40px;
+}
+    }
+    p{
+        font-family: 'Open Sans';
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 950px;
+        @media(max-width:750px){
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    button
+    {
+        background: linear-gradient(152.13deg, #63E1D9 -150.21%, #34A0CD 170.03%);
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+        border-radius: 28px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        border: none;
+        color: #FFFFFF;
+        height: 56px;
+        width: 280px;
+    }
+}
